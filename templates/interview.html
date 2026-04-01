@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interview</title>
+</head>
+<body>
+
+<h1>Answer Questions</h1>
+
+<form method="POST" action="/result">
+    {% for q in questions %}
+        <p>{{ q }}</p>
+        <input type="text" name="{{ q }}" required><br><br>
+    {% endfor %}
+
+    <button type="submit">Submit</button>
+</form>
+
+</body>
+</html>

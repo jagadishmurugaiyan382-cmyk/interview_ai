@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result</title>
+</head>
+<body>
+
+<h1>Your Score: {{ score }}</h1>
+
+<h2>Feedback:</h2>
+<ul>
+    {% for f in feedback %}
+        <li>{{ f }}</li>
+    {% endfor %}
+</ul>
+
+<a href="/">Try Again</a>
+
+</body>
+</html>
